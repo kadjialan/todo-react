@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  width: 500px;
+  background-color: #b3c3bb;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+button {
+  cursor: pointer;
+  height: 35px;
+  width: 60px;
+}
+
+.add {
+  background-color: #2121f4e2;
+  border: 1px solid #2121f4e2;
+  color: white;
+  border-radius: 3px;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.done {
+  background-color: #1addc2;
+  color: white;
+  border: 1px solid #1addc2;
+}
+
+.todo {
+  height: 33px;
+  width: 178px;
+  border: 2px solid whitesmoke;
+  background-color: #e3e3e3;
+}
+
+.end {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width: 245px;
+  height: 20px;
+  border: 1px solid cornsilk;
+  background-color: cornsilk;
+  padding: 20px 20px 20px 0;
+}
+
+.icons {
+  float: right;
+  color: red;
+  cursor: pointer;
+}
