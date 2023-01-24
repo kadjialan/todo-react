@@ -14,11 +14,16 @@ function Todo() {
       value: message,
     };
 
-    setTask((oldList) => [...oldList, item]);
+    setTask((previous) => [...previous, item]);
     setMessage("");
 
     console.log(task);
   };
+
+  const remove = (value) => {
+  const arr = task.filter(item => item.value !== value)
+  setTask(arr)
+  }
 
   const reset = () => {
     window.location.reload();
@@ -43,7 +48,7 @@ function Todo() {
           <div id="holder">
             {task.map(item => {
                 return (
-                    <p>{item.value}</p>
+                    <div className= "text"> <input type="checkbox" className="radio"/> {item.value}  <i className="fa-solid  icons fa-trash-can" onClick={() => remove(item.value)}/> </div>
                 )
             })}
           </div>
